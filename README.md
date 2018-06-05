@@ -1,2 +1,3 @@
 # Resource
-hfda - book 'Head first data analysis' related resource
+hfda - Head First Data Analysis
+pci - Programming Collective Intelligence
