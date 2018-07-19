@@ -14,5 +14,7 @@
 <path>/${PROJECT_DIR_NAME}/pci/chapter8</path>
 <path>/${PROJECT_DIR_NAME}/pci/chapter9</path>
 <path>/${PROJECT_DIR_NAME}/opencv3/chapter2</path>
+<path>/${PROJECT_DIR_NAME}/opencv3/chapter3</path>
+<path>/${PROJECT_DIR_NAME}/opencv3/chapter4</path>
 </pydev_pathproperty>
 </pydev_project>
