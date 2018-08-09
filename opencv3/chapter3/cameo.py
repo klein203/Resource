@@ -18,7 +18,7 @@ class Cameo(object):
             self._captureManager.enterFrame()
             frame = self._captureManager.frame
             
-            # TODO: filter the frame
+            # filter the frame
 #             frame = cv2.GaussianBlur(frame, (3, 3), 0)
 #             self._captureManager._frame = cv2.Canny(frame, 50, 150)
             filters.strokeEdges(frame, frame)

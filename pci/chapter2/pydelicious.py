@@ -1015,7 +1015,7 @@ def get_popular(tag=''):
     return getrss(tag=tag, popular=1)
 
 
-### @TODO: implement JSON fetching
+### @TODO implement JSON fetching
 
 def json_posts(user, count=15):
     """http://del.icio.us/feeds/json/mpe

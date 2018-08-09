@@ -17,8 +17,6 @@ class Cameo(object):
             self._captureManager.enterFrame()
             frame = self._captureManager.frame
             
-            # TODO: filter the frame
-            
             self._captureManager.exitFrame()
             self._windowManager.processEvent()
             
