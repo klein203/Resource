@@ -19,6 +19,8 @@ Z = zeros(size(X, 1), K);
 %
 
 
+U_reduce = U(:, 1:K);	% R = (n, K), typically K = 1
+Z = X * U_reduce;	% R = (m, K), typically K = 1
 
 
 % =============================================================

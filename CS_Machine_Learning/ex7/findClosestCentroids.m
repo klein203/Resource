@@ -22,9 +22,14 @@ idx = zeros(size(X,1), 1);
 %
 
 
+m = size(X, 1);
+distance = zeros(m, K);
 
+for i = 1:K
+	distance(:, i) = sum((X - centroids(i, :)) .^ 2, 2);
+end
 
-
+[~, idx] = min(distance, [], 2);
 
 
 % =============================================================
