@@ -41,18 +41,15 @@ Theta_grad = zeros(size(Theta));
 %
 
 
+predict = X * Theta' .* R;
+J = 1 / 2 * sum(sum((predict - Y) .^ 2)) ...
+	+ lambda / 2 * sum(sum(Theta .^ 2)) + lambda / 2 *sum(sum(X .^ 2));
 
+X_grad = (predict - Y) * Theta ...
+	+ lambda * X;	% num_movies x num_features
 
-
-
-
-
-
-
-
-
-
-
+Theta_grad = (predict - Y)' * X ...
+	+ lambda * Theta;	% num_users x num_features
 
 
 % =============================================================
